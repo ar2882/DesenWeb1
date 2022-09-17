@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--METADADOS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, metadados, comentários, layout, listas">
+    <!--FIM METADADOS-->
+    <title>Aulas Desenvolvimento Web 1</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header class="flex-container" id="topo">
+        <a href="index.html" title="Voltar para a página inicial"> <img src="imagem/FATEC_ZONA_LESTE.png" alt="Logo Fatec Zona Leste nas cores cinza e vermelho" class="imagem"> </a>
+
+    </header>
+    <nav class="flex-container" >
+        <ul class="menu"><!--li*5 pra criar direto os 5-->
+            <li> <a href="index.html">Início</a> </li>
+            <li> <a href="comentarios.html">Comentários</a> </li>
+            <li> <a href="metadados.html">Metadados</a> </li>
+            <li> <a href="javascript:void(0);">Listas</a>
+                <ul>
+                    <li> <a href="ol.html">Lista Ordenada</a> </li>
+                    <li> <a href="ul.html">Lista não Ordenadas</a></li>
+                </ul>
+            </li>
+            <li> <a href="layout.html">Layout</a> </li>
+            <li> <a href="contato.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <main class="flex-container" id="conteudo"><!--main = area de conteudo-->
+        <h1>Fale Conosco</h1><br><br>
+        
+        <form action="" method="post" name="contato" id="contato">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome" class="required">Nome</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Nome completo" required><br> <!--for do label e id do input tem que ter o mesmo nome-->
+            <label for="cpf" class="required">CPF</label><br>
+            <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required><br>  
+            <label for="email" class="required">E-MAIL</label><br>
+            <input type="text" name="email" id="email" placeholder="email@dominio.com" required><br>
+            <label for="telefone">Telefone</label><br>
+            <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999"><br>
+            <label for="data" class="required">Data de Nascimento</label><br>
+            <input type="date" name="data" id="data" required><br>
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="cep" class="required">CEP</label><br>
+            <input type="text" name="cep" id="cep" placeholder="99999-999" required><br>
+            <label for="rua">Rua</label><br>
+            <input type="text" name="rua" id="rua"><br>
+            <label for="numero" class="required">Número</label><br>
+            <input type="number" name="numero" id="numero" required><br>
+            <label for="complemento">Complemento</label><br>
+            <input type="text" name="complemento" id="complemento" placeholder="casa, bloco, apartamento"><br>
+            <label for="bairro">Bairro</label><br>
+            <input type="text" name="bairro" id="bairro"><br>
+            <label for="cidade">Cidade</label><br>
+            <input type="text" name="cidade" id="cidade"><br>
+            <label for="estado">Estado</label><br>
+            <input type="text" name="estado" id="estado"><br>
+
+        </fieldset><br>
+            
+        <fieldset>
+            <legend>Dados da Mensagem</legend>
+
+            <label for="curso" class="required">Curso</label>
+            <select name="curso" id="curso" required>
+                <option value="" selected disabled>Selecione um curso</option>
+                <option value="ads">Análise e desenvolvimento de sistemas</option>
+                <option value="comex">Comércio exterior</option>
+                <option value="dpp">Desenvolvimento de produtos plasticos</option>
+                <option value="dms">Desenvolvimento de software em multiplataforma</option>
+                <option value="ge">Gestão empresarial</option>
+                <option value="rh">Gestão de recursos humanos</option>
+                <option value="log">Logística</option>
+                <option value="pol">Polímeros</option>
+            </select><br>
+
+            <label for="assunto" class="required">Assunto</label>
+            <select name="assunsto" id="assunto" required>
+                <option value="elogio">Elogio</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="outro">Outro</option>
+            </select><br>
+
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" cols="40" rows="10"></textarea><br>
+
+        </fieldset>
+        <div class="bott">
+            <button type="submit">Enviar</button><br> <button type="reset">Limpar</button><br>
+        </div>
+          
+        </form>
+    
+    </main>
+
+    <footer class="flex-container" id="rodape">
+        <p>Desenvolvido por Arthur<br><!--<br> = quebra de linha-->
+            Todos os direitos reservados &copy; 2022 
+        </p>
+    </footer>
+
+</body>
+</html>
