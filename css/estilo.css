@@ -13,15 +13,37 @@
 
 }
 
+/*Cabecario*/
 #topo{
     width: 100%;
     background-color: #ddd;
     justify-content: center;
     height: auto;
 }
-/*Cabecario*/
 #topo a{
     text-align: center;
+}
+
+.accessibilidade{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.atalhos, .link_access{
+    list-style: none;
+    display: inline-flex;
+    padding: 5px;
+
+}
+
+.atalhos li, .link_access li{
+    padding-left: 10px;
+
+}
+
+.link_access{
+    margin-left: 60%;
 }
 
 .imagem{
@@ -105,28 +127,28 @@ nav{
 }
 
 /*Formulario*/
-form{
+.form{
     margin: auto;
     flex-direction: column;
     align-items: center;
 }
 
-label, legend{   
+.label, .legend{   
     font-size: 0.7em;
 }
-input, select, textarea{
+.input, .select, .textarea{
     padding: 10px;
     border-radius: 15px;
     width: 110%;
 }
 
-fieldset{
+.fieldset{
     width: 80%;
     border: none;
     padding: 1%;   
 }
 
-button{
+.button{
     width: 20%;
     padding: 10px;
     flex-direction: column-reverse;
